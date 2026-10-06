@@ -1,0 +1,25 @@
+{
+  "name": "envio-de-nf-envio-de-comprovantes-subidopro",
+  "version": "1.0.0",
+  "description": "Envia NFS-e por e-mail com o link da cobrança do Asaas, baixa os comprovantes de pagamento e prepara o envio dos recebimentos para a Liga Subido PRO.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "autorizar": "tsx scripts/autorizar.ts",
+    "enviar": "tsx scripts/enviar.ts",
+    "comprovantes": "tsx scripts/comprovantes.ts",
+    "subido": "tsx scripts/subido.ts",
+    "checar": "tsc --noEmit"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.7.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}
